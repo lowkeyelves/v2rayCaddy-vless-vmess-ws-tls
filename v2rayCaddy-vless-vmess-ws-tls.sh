@@ -102,11 +102,11 @@ add-apt-repository --yes multiverse
 apt-get -o Acquire::ForceIPv4=true install -y moreutils dnsutils tmux screen nano wget curl socat jq qrencode
 
 echo
-echo "=== Install V2ray 4.45.2 Version ==="
+echo "=== Install V2ray  ==="
 echo
 sleep 1
 
-bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh) --version 4.45.2
+bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh) 
 systemctl enable v2ray
 
 echo
